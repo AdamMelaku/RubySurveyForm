@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="">
+      <h5>Thanks for submitting this form! You've have submitted this form <%= session[:count]%> times now </h5>
+    </div>
+    <h4>Submitted Information</h4>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td><%= @survey.name %></td>
+      </tr>
+      <tr>
+        <th>Language</th>
+        <td><%= @survey.language %></td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td><%= @survey.location %></td>
+      </tr>
+      <tr>
+        <th>Comment</th>
+        <td><%= @survey.comment %></td>
+      </tr>
+    </table>
+    <a href="/">Go Back</a>
+  </body>
+</html>
